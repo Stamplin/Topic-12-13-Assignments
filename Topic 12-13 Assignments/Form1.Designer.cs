@@ -42,6 +42,7 @@
             this.btnCalculate = new System.Windows.Forms.Button();
             this.lblTotal = new System.Windows.Forms.Label();
             this.lbleditCount = new System.Windows.Forms.Label();
+            this.btnSubmit = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -165,7 +166,6 @@
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Fixings:";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // btnCalculate
             // 
@@ -199,7 +199,18 @@
             this.lbleditCount.Size = new System.Drawing.Size(196, 13);
             this.lbleditCount.TabIndex = 12;
             this.lbleditCount.Text = "Order has been Changed: 0 times";
-            this.lbleditCount.Click += new System.EventHandler(this.lbleditCount_Click);
+            // 
+            // btnSubmit
+            // 
+            this.btnSubmit.BackColor = System.Drawing.Color.Gold;
+            this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSubmit.Location = new System.Drawing.Point(202, 343);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(95, 25);
+            this.btnSubmit.TabIndex = 13;
+            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.UseVisualStyleBackColor = false;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // Form1
             // 
@@ -208,6 +219,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = global::Topic_12_13_Assignments.Properties.Resources.fe0a0eee780652de948e6bf4b9ddf3e7;
             this.ClientSize = new System.Drawing.Size(800, 463);
+            this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.lbleditCount);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.btnCalculate);
@@ -241,6 +253,7 @@
         private System.Windows.Forms.Button btnCalculate;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.Label lbleditCount;
+        private System.Windows.Forms.Button btnSubmit;
     }
 }
 
